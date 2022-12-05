@@ -1,0 +1,9 @@
+{% extends 'base.html'%}
+{% block content %}
+<h1> Update {{snack.title}} Snacks model : </h1>
+<form method='post'>
+    {%csrf_token%}
+    {{form.as_ul}}
+    <input type='submit'/>
+</form>
+{% endblock content %}
